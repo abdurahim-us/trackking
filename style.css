@@ -11,9 +11,146 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	background-color: powderblue;
+}
+
+.out {
+	text-align: left;
+	color: #333333;
 }
 
 .container {
 	background-color: black;
+	height: 700px;
+	width: 80%;
+	font-family: "Montserrat";
+}
+
+.header {
+	letter-spacing: 1px;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 80px;
+}
+
+.span-text {
+	display: flex;
+	align-items: center;
+
+}
+
+.span {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	position: relative;
+}
+
+.span::before,
+.span::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	border-radius: 110px;
+	outline: none;
+	border: none;
+}
+
+.span::before {
+	transform: translateY(-10px);
+}
+
+.span::after {
+	transform: translateY(10px);
+}
+
+.span-seven {
+	text-transform: capitalize;
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: 700;
+	margin-left: 15px; 
+}
+
+
+.search {
+	display: flex;
+}
+
+.search-subtext {
+	display: block;
 	color: white;
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: 500;
+	margin-right: 20px; 
+	transition: 0.4s ease;
+}
+
+.search-subtext:hover {
+	color: powderblue;
+	box-shadow: 0 5px 0 0 powderblue;
+}
+
+.flex-uchun {
+	display: flex;
+	align-items: center;
+	margin: 0 80px;
+}
+
+.text-part {
+	margin-left: 25px;
+}
+
+.heading {
+	font-size: 66px;
+    letter-spacing: 3px;
+	line-height: 100px;
+	color: #ffffff;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.text-part-text {
+	font-size: 20px;
+	line-height: 45px;
+	color: #ccc;
+	font-weight: 500;
+}
+
+.text-part-link {
+	display: block;
+	font-size: 32px;
+	line-height: 50px;
+	color: #ffffff;
+	font-weight: 400;
+	transition: 0.8s ease;
+	padding-bottom: 10px;
+}
+
+.link-img {
+	margin-top: 35px;
+	display: flex;
+	align-items: center;
+}
+
+.text-part-link:hover {
+	color: powderblue;
+	 box-shadow: 0 5px 0 0 powderblue;
+	margin-right: 40px;
+}
+
+
+.img-holder {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
 }
